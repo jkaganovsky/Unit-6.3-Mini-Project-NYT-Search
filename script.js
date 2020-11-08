@@ -1,4 +1,4 @@
-// Orlando's Group project.
+// pod7-Group project.
 $("#search1").on("click", function () {
 
     var search = $("#data-search").val();
