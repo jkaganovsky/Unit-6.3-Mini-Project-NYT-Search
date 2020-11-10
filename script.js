@@ -2,9 +2,12 @@
 $("#search1").on("click", function () {
 
     var search = $("#data-search").val();
-
+// Here we are building the URL we need to query the database
+// also our Group API key contributed by one of our group member Jailani.
     var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + search + "&api-key=C6PBFTXpLY3IK9rkzEWd6BLseVBYsNu1";
 
+// function acessQuery queryURL
+// We then created an AJAX call
     $.ajax({
         url: queryURL,
         method: "GET"
